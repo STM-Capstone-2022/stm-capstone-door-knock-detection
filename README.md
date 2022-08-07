@@ -58,11 +58,11 @@ For the SNS topic, we want to create a new SNS topic by clicking on the button t
 
 ### Step 3.5: Set Up The Message System
 
-Set the topic type to be standard and give the topic a name, preferably the way the message will be sent (through EMail). Nothing else needs to be altered, so create the topic
+Set the topic type to be standard and give the topic a name, preferably the way the message will be sent (through EMail). Nothing else needs to be altered.
 
 ![asdf](https://user-images.githubusercontent.com/59811685/183310806-482803f4-3b49-42fb-9430-f9f2cf036f65.JPG)
 
-Once the topic is created, you will be sent to the details of the topic. We will now create a subscription to actually send an email. Go to the subscriptions tab below, and click **Create subscription**
+Once the topic is created, you will be sent to the details of the topic. We will now create a subscription to actually send an email. Go to the subscriptions tab below, and click **Create subscription**.
 
 It will automatically fill in the topic ARN for you. Click on the Protocol dropdown menu, and select *Email*. Another line will pop-up called *Endpoint*, which is where the message is sent.
 
