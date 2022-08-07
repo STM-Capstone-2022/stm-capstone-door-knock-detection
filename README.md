@@ -61,3 +61,11 @@ For the SNS topic, we want to create a new SNS topic by clicking on the button t
 Set the topic type to be standard and give the topic a name, preferably the way the message will be sent (through EMail). Nothing else needs to be altered, so create the topic
 
 ![asdf](https://user-images.githubusercontent.com/59811685/183310806-482803f4-3b49-42fb-9430-f9f2cf036f65.JPG)
+
+Once the topic is created, you will be sent to the details of the topic. We will now create a subscription to actually send an email. Go to the subscriptions tab below, and click **Create subscription**
+
+It will automatically fill in the topic ARN for you. Click on the Protocol dropdown menu, and select *Email*. Another line will pop-up called *Endpoint*, which is where the message is sent.
+
+Any email address will work, but a downfall to this is that constant door knocking will send multiple Emails, so choose one where you don't mind a potential flood of Emails from AWS.
+
+An Email will be sent to the address you provided. You must click the link Emailed to you to confirm and activate the subscription
