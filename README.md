@@ -29,3 +29,21 @@ Double tap the device to see the MQTT payload. The device doesn't react if the t
 ![image](https://user-images.githubusercontent.com/59811685/183277917-240e6c6b-5324-4f96-bc76-609c46a89193.png)
 
 ## Setting up the alert system
+
+For the alert, we will be using the rules engine, a free service that monitors MQTT messages and triggers an action once it detects the correct message.
+
+To setup the rule, on the IoT Core navigate to the left side bar and go to Manage -> Message Routing -> Rules.
+
+This window will show you all the rules you have created. It's important to note that like things, rules are also region dependant, so make sure to create the rule on the same region as your device. To create the rule, click on the orange **create rule** button on the top right.
+
+### Step 1
+The first step is to give it a name. Descriptions and tags are optional and is not needed for this.
+
+### Step 2
+The second step is the SQL statement. This is the heart of the rule, where it determines what message to look out for in a subscribed topic. For this, keep the SQL version to 2016-03-23. 
+
+The statement should be written out as follows
+
+![image](https://user-images.githubusercontent.com/59811685/183310426-21c4caef-21da-443f-ad99-7b4dcecc06bc.png)
+
+In this case, the SQL statement is looking at the double_tap object in the payload from the stm32test4/motion_sensor_data topic. Note that stm32test4 should be changed to represent your device's name. The last part says that it will only trigger the rule if double_tap is true.
