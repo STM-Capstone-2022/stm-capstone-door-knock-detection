@@ -12,7 +12,7 @@ The only prerequisit is to follow the set up tutorial [linked here](https://gith
 
 Navigate to your root directory for the Project. If you compare the directory names within the project to the ones on the repo, you should notice they have the same names. This is done to make it easier to find the right files.
 
-***Create a backup of the original project at this point if you haven't done so already. The project is prone to not work if files are not transfered correctly. ***
+***Create a backup of the original project at this point if you haven't done so already. The project is prone to not work if files are not transfered correctly.***
 
 Use the file paths on the repo to find the correct files to be transfered.
 
