@@ -1,2 +1,3 @@
 # Double-Tap-Detection-Updated-Files
-The updated files to change the project to send double tap events to AWS IoT Core
+
+This repository allows you to change your project code to send a door knock event to AWS IoT Core
