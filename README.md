@@ -28,3 +28,4 @@ Double tap the device to see the MQTT payload. The device doesn't react if the t
 
 ![image](https://user-images.githubusercontent.com/59811685/183277917-240e6c6b-5324-4f96-bc76-609c46a89193.png)
 
+## Setting up the alert system
