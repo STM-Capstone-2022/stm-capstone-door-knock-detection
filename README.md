@@ -76,4 +76,12 @@ Navigate back to the rule action step, and click on your newly created SNS topic
 
 For the message format, keep it as RAW so you can see the payload from the Email.
 
-For the IAM role, create an IAM rule using the **Create new role** button.
+For the IAM role, create an IAM rule using the **Create new role** button. It will automatically apply the needed policies and permissions, you just need to give it a name. It will automatically apply the IAM role after creation
+
+Your rule action should look close to this. Click **Next** at the bottom
+
+![asdf](https://user-images.githubusercontent.com/59811685/183311280-7a068d30-1a8f-48ef-8d30-733ec0a7711e.JPG)
+
+### Step 4
+
+This is just reviewing all the information. When you press **Create** it will take you back to the Rules page, with your Rule now active. At any point you can deactivate the rule to stop sending messages. 
