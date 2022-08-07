@@ -27,3 +27,4 @@ Subscribe to the topic *name of device given from provision script*/motion_senso
 Double tap the device to see the MQTT payload. The device doesn't react if the taps are too fast or too slow, so it's recommended to tap with about a half second interval. Below if a picture of what the payload should look like.
 
 ![image](https://user-images.githubusercontent.com/59811685/183277917-240e6c6b-5324-4f96-bc76-609c46a89193.png)
+
