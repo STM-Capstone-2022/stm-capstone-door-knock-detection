@@ -30,7 +30,7 @@ Double tap the device to see the MQTT payload. The device doesn't react if the t
 
 ## Setting up the alert system
 
-For the alert, we will be using the rules engine, a free service that monitors MQTT messages and triggers an action once it detects the correct message.
+For the alert, we will be using the rules engine, a free service that monitors MQTT messages and triggers an action once it detects the correct message. The rule will send an email as soon as the rule is triggered.
 
 To setup the rule, on the IoT Core navigate to the left side bar and go to Manage -> Message Routing -> Rules.
 
@@ -47,3 +47,17 @@ The statement should be written out as follows
 ![image](https://user-images.githubusercontent.com/59811685/183310426-21c4caef-21da-443f-ad99-7b4dcecc06bc.png)
 
 In this case, the SQL statement is looking at the double_tap object in the payload from the stm32test4/motion_sensor_data topic. Note that stm32test4 should be changed to represent your device's name. The last part says that it will only trigger the rule if double_tap is true.
+
+### Step 3
+
+For step 3, we will attach an action to the rule. The action defines what happens when the rule is triggered
+
+For this, we only need one action rule. Click on the drop down menu and select the action **Simple Notification Service (SNS)**
+
+For the SNS topic, we want to create a new SNS topic by clicking on the button to the right, where a new window will open
+
+### Step 3.5: Set Up The Message System
+
+Set the topic type to be standard and give the topic a name, preferably the way the message will be sent (through EMail). Nothing else needs to be altered, so create the topic
+
+![asdf](https://user-images.githubusercontent.com/59811685/183310806-482803f4-3b49-42fb-9430-f9f2cf036f65.JPG)
