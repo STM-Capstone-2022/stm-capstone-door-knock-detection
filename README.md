@@ -68,4 +68,12 @@ It will automatically fill in the topic ARN for you. Click on the Protocol dropd
 
 Any email address will work, but a downfall to this is that constant door knocking will send multiple Emails, so choose one where you don't mind a potential flood of Emails from AWS.
 
-An Email will be sent to the address you provided. You must click the link Emailed to you to confirm and activate the subscription
+An Email will be sent to the address you provided. You must click the link Emailed to you to confirm and activate the subscription.
+
+### Step 3 cont.
+
+Navigate back to the rule action step, and click on your newly created SNS topic. If you don't see it, press the refresh button to the right of the dropdown menu.
+
+For the message format, keep it as RAW so you can see the payload from the Email.
+
+For the IAM role, create an IAM rule using the **Create new role** button.
